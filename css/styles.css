@@ -881,6 +881,8 @@ input[type="checkbox"] {
 
 .header .swiper-container img {
   border-radius: 0.75rem;
+  /* height: 450px;
+  width: auto; */
 }
 
 .header .swiper-button-prev:focus,
@@ -980,11 +982,25 @@ input[type="checkbox"] {
 .basic-1 {
   padding-top: 3.75rem;
   padding-bottom: 3.5rem;
-  background-color: #fbf9f5;
+  background: linear-gradient(
+      to bottom right,
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.8)
+    ),
+    url("../images/header-background.jpg") center center no-repeat;
+  background-size: cover;
 }
 
 .basic-1 h2 {
   margin-bottom: 1.25rem;
+  color: #eee;
+}
+.basic-1 h3 {
+  color: #eee;
+}
+
+.basic-1 p {
+  color: #eee;
 }
 
 .basic-1 img {
@@ -1010,6 +1026,18 @@ input[type="checkbox"] {
   margin-bottom: 1.375rem;
 }
 
+.p-heading-soln {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 85%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 50px;
+  font-weight: 800;
+  font-size: 20px;
+}
+
 .basic-2 .list-unstyled .bullet {
   margin-right: 0.625rem;
   width: 2.125rem;
@@ -1030,7 +1058,14 @@ input[type="checkbox"] {
 .basic-3 {
   padding-top: 2.75rem;
   padding-bottom: 4rem;
-  background-color: #fbf9f5;
+  background: linear-gradient(
+      to bottom right,
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.8)
+    ),
+    url("../images/header-background.jpg") center center no-repeat;
+  background-size: cover;
+  /* color: #eee; */
 }
 
 .basic-3 .text-container {
@@ -1039,10 +1074,12 @@ input[type="checkbox"] {
 
 .basic-3 h2 {
   margin-bottom: 1.25rem;
+  color: #eee;
 }
 
 .basic-3 p {
   margin-bottom: 1.375rem;
+  color: #eee;
 }
 
 .basic-3 img {
@@ -1174,6 +1211,12 @@ input[type="checkbox"] {
   position: relative;
 }
 
+.video-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* Video Play Button */
 .basic-4 .video-play-button {
   position: absolute;
@@ -1253,10 +1296,16 @@ input[type="checkbox"] {
 /*************************/
 /*     12. Takeaways     */
 /*************************/
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .cards {
   padding-top: 3rem;
   padding-bottom: 2rem;
-  background-color: #fbf9f5;
+  background-color: #ffbd50;
 }
 
 .cards h2 {
@@ -1745,6 +1794,11 @@ a:hover.back-to-top {
   .header .outer-container {
     bottom: -4rem;
   }
+
+  /* .header .swiper-container img {
+    width: auto;
+    height: auto;
+  } */
 
   .header .swiper-button-prev {
     left: 1.5rem;

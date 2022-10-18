@@ -206,32 +206,19 @@
 
   function rsubmitForm() {
     // initiate variables with form content
-    var name = $("#rname").val();
-    var email = $("#remail").val();
-    var phone = $("#rphone").val();
-    var terms = $("#rterms").val();
 
-    $.ajax({
-      type: "POST",
-      url: "php/registrationform-process.php",
-      data:
-        "name=" +
-        name +
-        "&email=" +
-        email +
-        "&phone=" +
-        phone +
-        "&terms=" +
-        terms,
-      success: function (text) {
-        if (text == "success") {
+    emailjs
+      .sendForm("Service id", "template id", "#registrationForm", "public_key")
+      .then(
+        function (response) {
           rformSuccess();
-        } else {
+          console.log("SUCCESS!", response.status, response.text);
+        },
+        function (error) {
           rformError();
-          rsubmitMSG(false, text);
+          console.log("FAILED...", error);
         }
-      },
-    });
+      );
   }
 
   function rformSuccess() {
@@ -338,32 +325,18 @@
     });
 
   function csubmitForm() {
-    // initiate variables with form content
-    var name = $("#cname").val();
-    var email = $("#cemail").val();
-    var message = $("#cmessage").val();
-    var terms = $("#cterms").val();
-    $.ajax({
-      type: "POST",
-      url: "php/contactform-process.php",
-      data:
-        "name=" +
-        name +
-        "&email=" +
-        email +
-        "&message=" +
-        message +
-        "&terms=" +
-        terms,
-      success: function (text) {
-        if (text == "success") {
+    emailjs
+      .sendForm("Service id", "template id", "#contactForm", "public_key")
+      .then(
+        function (response) {
           cformSuccess();
-        } else {
+          console.log("SUCCESS!", response.status, response.text);
+        },
+        function (error) {
           cformError();
-          csubmitMSG(false, text);
+          console.log("FAILED...", error);
         }
-      },
-    });
+      );
   }
 
   function cformSuccess() {
@@ -415,6 +388,15 @@
     var email = $("#pemail").val();
     var select = $("#pselect").val();
     var terms = $("#pterms").val();
+
+    emailjs.sendForm("contact_service", "contact_form", this).then(
+      function () {
+        console.log("SUCCESS!");
+      },
+      function (error) {
+        console.log("FAILED...", error);
+      }
+    );
 
     $.ajax({
       type: "POST",
