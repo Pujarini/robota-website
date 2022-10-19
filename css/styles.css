@@ -882,14 +882,18 @@ input[type="checkbox"] {
 
 .header .swiper-container img {
   border-radius: 0.75rem;
-  /* height: 450px;
-  width: auto; */
 }
 
 .header .swiper-button-prev:focus,
 .header .swiper-button-next:focus {
   /* even if you can't see it chrome you can see it on mobile device */
   outline: none;
+}
+
+.img-fluid-custom {
+  width: 260px;
+  height: 170px;
+  object-fit: cover;
 }
 
 .header .swiper-button-prev {
@@ -1853,6 +1857,11 @@ a:hover.back-to-top {
   .ex-basic-2 .form-container {
     margin-top: 0;
   }
+  .img-fluid-custom {
+    width: 660px;
+    height: 390px;
+    object-fit: cover;
+  }
   /* end of extra pages */
 }
 /* end of min-width width 768px */
@@ -1941,6 +1950,12 @@ a:hover.back-to-top {
   .navbar-custom .fa-stack:hover .fa-stack-1x {
     color: #fff;
   }
+
+  /* .img-fluid-custom {
+    width: 660px;
+    height: 470px;
+    object-fit: cover;
+  } */
   /* end of navigation */
 
   /* General Styles */
