@@ -208,7 +208,12 @@
     // initiate variables with form content
 
     emailjs
-      .sendForm("Service id", "template id", "#registrationForm", "public_key")
+      .sendForm(
+        "service_22xfgdm",
+        "template_j7hevv8",
+        "#registrationForm",
+        "s7xl5h_ibOC0HQv3k"
+      )
       .then(
         function (response) {
           rformSuccess();
@@ -326,7 +331,12 @@
 
   function csubmitForm() {
     emailjs
-      .sendForm("Service id", "template id", "#contactForm", "public_key")
+      .sendForm(
+        "service_22xfgdm",
+        "template_gvhawpd",
+        "#contactForm",
+        "s7xl5h_ibOC0HQv3k"
+      )
       .then(
         function (response) {
           cformSuccess();

@@ -1013,6 +1013,13 @@ input[type="checkbox"] {
   border-radius: 0.25rem;
 }
 
+.img-fluid-profile {
+  width: 380px;
+  height: 400px;
+  border: 50%;
+  object-fit: cover;
+}
+
 /***************************/
 /*     08. Description     */
 /***************************/
@@ -1862,6 +1869,13 @@ a:hover.back-to-top {
     height: 390px;
     object-fit: cover;
   }
+
+  .img-fluid-profile {
+    width: 400px;
+    height: 400px;
+    border: 50%;
+    object-fit: cover;
+  }
   /* end of extra pages */
 }
 /* end of min-width width 768px */
@@ -1995,6 +2009,7 @@ a:hover.back-to-top {
   .basic-1 img {
     margin-bottom: 0;
   }
+
   /* end of instructor */
 
   /* Description */
