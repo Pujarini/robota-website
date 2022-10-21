@@ -668,7 +668,7 @@ input[type="checkbox"] {
 }
 
 .navbar-custom .navbar-brand.logo-image img {
-  height: 6.5rem;
+  height: 7rem;
   width: 7rem;
   border: 3px solid;
   border-radius: 50%;
@@ -1224,12 +1224,15 @@ input[type="checkbox"] {
 
 .basic-4 .video-wrapper {
   position: relative;
+  width: 100%;
+  /* width: 500px; */
 }
 
 .video-center {
   display: flex;
   justify-content: center;
   align-items: center;
+  /* width: 500px; */
 }
 
 /* Video Play Button */
@@ -1330,6 +1333,7 @@ input[type="checkbox"] {
 
 .cards p {
   text-align: center;
+  color: #333;
 }
 
 .cards .card {
