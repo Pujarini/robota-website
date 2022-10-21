@@ -1064,8 +1064,8 @@ input[type="checkbox"] {
 /*     09. Students     */
 /************************/
 .basic-3 {
-  padding-top: 2.75rem;
-  padding-bottom: 4rem;
+  /* padding-top: 2.75rem;
+  padding-bottom: 4rem; */
 
   /* background: url("../images/objective\ \(3\).jpg") center center no-repeat;
   background-size: cover; */
@@ -2020,8 +2020,8 @@ a:hover.back-to-top {
 
   /* Students */
   .basic-3 {
-    padding-top: 3.5rem;
-    padding-bottom: 4.5rem;
+    /* padding-top: 3.5rem;
+    padding-bottom: 4.5rem; */
   }
 
   .basic-3 .text-container {
